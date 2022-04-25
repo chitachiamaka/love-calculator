@@ -1,7 +1,7 @@
 var msg = document.getElementById("msg");
 function lovCalc(){
     var fName = prompt('Enter your name');
-    var lName = prompt("Enter your partner's name");
+    var lName = prompt("Enter your patern's name");
     var xName = fName.slice(0,1);
     var yName = xName.toUpperCase();
     var zName = yName + fName.slice(1);
@@ -12,7 +12,8 @@ function lovCalc(){
     love = love * 100;
     love = Math.floor(love) + 1;
     var output = zName + " and " + cName + " are " + love + "% match!!!";
-      return output;
+  
+    return output;
 }
 var match = lovCalc();
 msg.innerHTML = match;
